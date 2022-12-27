@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>CCXP</title>
 </head>
 
 <body>
     <header>
-        <img src="./assests/logo.svg" alt="CCXP" width="150px">
+        <img src="./assets/logo.svg" alt="CCXP" width="150px">
     </header>
     <section id="seci">
         <div id="desc">
@@ -36,7 +37,7 @@
                 <p id="aviso"><strong>PARA A MAIOR CCXP DE TODOS OS TEMPOS</strong></p>
             </div>
             <div id="video">
-                <video width="100%" controls autoplay loop muted><source src="./assests/Arlequina.mp4" type="video/mp4"></video>
+                <video width="100%" controls autoplay loop muted><source src="./assets/Arlequina.mp4" type="video/mp4"></video>
             </div>
         </div>
     </section>
@@ -46,17 +47,40 @@
                 <strong>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
             </div>
             <div id="ing2">
-                <img src="./assests/qui.svg" class="card" alt="">
-                <img src="./assests/sex.svg" class="card" alt="">
-                <img src="./assests/sab.svg" class="card" alt="">
-                <img src="./assests/dom.svg" class="card" alt="">
+                <img src="./assets/qui.svg" 
+                onclick="selectCard('#quinta')"
+                onmouseover="highLightCard('#quinta')" 
+                onmouseout="highLightCard('#quinta')" 
+                id="quinta" alt="">
+                <img src="./assets/sex.svg"
+                onclick="selectCard('#sexta')" 
+                onmouseover="highLightCard('#sexta')" 
+                onmouseout="highLightCard('#sexta')"
+                 id="sexta" alt="">
+                <img src="./assets/sab.svg" 
+                onclick="selectCard('#sabado')"
+                onmouseover="highLightCard('#sabado')" 
+                onmouseout="highLightCard('#sabado')" 
+                id="sabado" alt="">
+                <img src="./assets/dom.svg" 
+                onclick="selectCard('#domingo')"
+                onmouseover="highLightCard('#domingo')" 
+                onmouseout="highLightCard('#domingo')" 
+                id="domingo" alt="">
             </div>
         </div>
         <div id="compra">
-            <button> GARANTA O SEU!</button>
+            <button onclick="showSelectedCards()"> GARANTA O SEU!</button>
         </div>
     </section>
+    <div id="rodape">
+        <form action="https://www.google.com">
+            <input type="email" placeholder="Seu email" required />
+            <input type="submit" />
+        </form>
+    </div>
     <script src="./js/cronometro.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

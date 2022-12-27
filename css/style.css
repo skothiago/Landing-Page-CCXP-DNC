@@ -83,12 +83,25 @@ section {
 #ing2 {
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 #compra{
     display: flex;
     align-items: center;
     margin-left: 150px;
+}
+
+input {
+    background: #514988;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 0;
+    margin: 30px;
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
 }
 
 button {
@@ -125,6 +138,19 @@ button:hover{
     text-align: center;
 }
 
-.card{
+.card-highlight {
+    box-shadow: 10px 10px 10px 10px #514988;
     cursor: pointer;
+}
+
+.card-selected {
+    border: 5px outset rgba(35, 207, 35, 0.788);
+    border-radius: 10px;
+}
+
+#rodape {
+    display: flex;
+    background-color: #ffd900;
+    align-items: center;
+    justify-content: center;
 }
